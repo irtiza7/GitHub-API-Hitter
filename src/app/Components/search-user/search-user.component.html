@@ -1,0 +1,32 @@
+<div class="container">
+  <div>
+    <nav class="navbar navbar-light custom-style-3">
+      <form class="form-inline" (submit)="preventDefaultBehavior($event)">
+        <div class="input-group custom-style-2">
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text custom-style-1 custom-style-5"
+              id="basic-addon1"
+              >Search</span
+            >
+          </div>
+          <input
+            class="form-control custom-style-1 custom-style-4"
+            type="text"
+            placeholder="@username"
+            aria-label="username"
+            aria-describedby="basic-addon1"
+            #inputText
+            (input)="publishSearchTerm($event, inputText.value)"
+          />
+        </div>
+      </form>
+    </nav>
+  </div>
+  <div class="list-content-parent-styles" *ngIf="listOfUsers | async as users">
+    <app-search-results
+      *ngIf="users.length > 0"
+      [users]="users"
+    ></app-search-results>
+  </div>
+</div>
