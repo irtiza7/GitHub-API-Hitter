@@ -1,0 +1,56 @@
+.py-5 {
+  padding: 2em !important;
+}
+.avatar-styles {
+  border-radius: 50%;
+  padding: 20px;
+  width: 300;
+  height: 300px;
+}
+.name-styles {
+  font-size: xx-large;
+}
+.open-profile-button-styles {
+  color: white;
+  text-decoration: none;
+}
+.repo-div-styles {
+  border-radius: 5%;
+  border-style: solid;
+}
+.open-repo-button-style {
+  color: white;
+  text-decoration: none;
+}
+.repo-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+.repo-entry {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #f9f9f9;
+}
+.repo-name {
+  margin: 0;
+}
+
+.repo-description {
+  margin: 5px 0;
+}
+.github-button {
+  background-color: #0366d6;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.github-button a {
+  text-decoration: none;
+  color: #fff;
+}
