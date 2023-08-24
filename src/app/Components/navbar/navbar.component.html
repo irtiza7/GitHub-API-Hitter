@@ -1,0 +1,11 @@
+<div class="container-flex">
+  <nav class="navbar navbar-light bg-dark">
+    <span class="navbar-brand mb-0 h1 custom-span-style">
+      {{ appTitle | uppercase }}
+    </span>
+    <button (click)="searchForFollowers()">Get Followers</button>
+  </nav>
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>
