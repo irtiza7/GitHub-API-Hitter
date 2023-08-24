@@ -1,0 +1,55 @@
+<div>
+  <div class="container list-container-styles">
+    <div
+      class="user-info list-entry-styles"
+      *ngFor="let user of users.slice(lowerIndex, upperIndex)"
+    >
+      <div (click)="navigateToUserDetails(user.login)">
+        <img
+          class="avatar-styles"
+          [src]="user.avatar_url"
+          alt="{{ user.login }}"
+        />
+        <a class="username-styles" routerLink="/details/{{ user.login }}">{{
+          user.login
+        }}</a>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="form-check form-switch show-all-results-styles">
+      <input
+        class="form-check-input toggle-button-styles"
+        type="checkbox"
+        id="flexSwitchCheckChecked"
+        unchecked
+        (click)="toggleShowAllResults()"
+      />
+      <label class="form-check-label" for="flexSwitchCheckChecked"
+        >Show All</label
+      >
+    </div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <button
+            (click)="previousResultsPage()"
+            class="page-link previous-next-button-styles"
+            [disabled]="showAllResults"
+          >
+            Previous
+          </button>
+        </li>
+        <li class="page-item">
+          <button
+            (click)="nextResultsPage()"
+            class="page-link previous-next-button-styles"
+            [disabled]="showAllResults"
+          >
+            Next
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="center-container" *ngIf="errorMsg">
+  <div class="error-container">
+    <div class="error-box">
+      <p>{{ errorMsg }}</p>
+      <button (click)="onBackButtonClick()">Go Back</button>
+    </div>
+  </div>
+</div>

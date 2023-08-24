@@ -1,0 +1,18 @@
+<div class="container-flex">
+  <nav class="navbar navbar-light bg-dark nav-styles">
+    <span class="navbar-brand mb-0 h1 title-span-style">
+      {{ appTitle | uppercase }}
+    </span>
+    <a
+      class="btn btn-outline-light navbar-button-styles"
+      routerLink="search-user"
+      >Find Users</a
+    >
+    <a class="btn btn-outline-light navbar-button-styles" routerLink="followers"
+      >Find Followers</a
+    >
+  </nav>
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>
