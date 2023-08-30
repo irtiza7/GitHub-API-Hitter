@@ -70,3 +70,8 @@
     transform: rotate(360deg);
   }
 }
+.center-container {
+  display: grid;
+  place-items: center;
+  height: 100vh; /* Set to the desired height of your page */
+}
