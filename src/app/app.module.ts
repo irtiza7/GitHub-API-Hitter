@@ -10,6 +10,7 @@ import { SearchUserComponent } from './Components/search-user/search-user.compon
 import { UserDetailsComponent } from './Components/user-details/user-details.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { SearchResultsComponent } from './Components/search-results/search-results.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { SearchResultsComponent } from './Components/search-results/search-resul
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
