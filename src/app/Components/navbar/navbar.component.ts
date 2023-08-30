@@ -11,6 +11,10 @@ export class NavbarComponent {
 
   constructor(private readonly router: Router) {}
 
+  searchForUsers() {
+    this.router.navigate(['search-user']);
+  }
+
   searchForFollowers() {
     this.router.navigate(['followers']);
   }

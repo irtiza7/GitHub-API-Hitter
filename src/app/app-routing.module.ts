@@ -17,7 +17,11 @@ const routes: Routes = [
     path: 'details/:login',
     component: UserDetailsComponent,
   },
-  { path: 'followers', loadChildren: () => import('./followers/followers.module').then(m => m.FollowersModule) },
+  {
+    path: 'followers',
+    loadChildren: () =>
+      import('./followers/followers.module').then((m) => m.FollowersModule),
+  },
 ];
 
 @NgModule({
