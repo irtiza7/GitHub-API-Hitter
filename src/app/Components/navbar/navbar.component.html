@@ -3,20 +3,14 @@
     <span class="navbar-brand mb-0 h1 title-span-style">
       {{ appTitle | uppercase }}
     </span>
-    <button
-      type="button"
+    <a
       class="btn btn-outline-light navbar-button-styles"
-      (click)="searchForUsers()"
+      routerLink="search-user"
+      >Find Users</a
     >
-      Find Users
-    </button>
-    <button
-      type="button"
-      class="btn btn-outline-light navbar-button-styles"
-      (click)="searchForFollowers()"
+    <a class="btn btn-outline-light navbar-button-styles" routerLink="followers"
+      >Find Followers</a
     >
-      Find Followers
-    </button>
   </nav>
 </div>
 <div>

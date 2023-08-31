@@ -43,7 +43,6 @@ export class FollowerResultsComponent {
   nextResultsPage() {
     if (this.upperIndex + 10 > this.numberOfUsers) {
       this.upperIndex = this.numberOfUsers;
-      console.log('limit', this.lowerIndex, this.upperIndex);
       return;
     } else {
       this.upperIndex = this.upperIndex + 10;
