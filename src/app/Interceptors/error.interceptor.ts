@@ -20,7 +20,7 @@ export class ErrorInterceptor implements HttpInterceptor {
   ): Observable<HttpEvent<any>> {
     return next.handle(request).pipe(
       catchError((error: HttpErrorResponse) => {
-        const msg = `Error Occured: Counldn't connet to the server.`;
+        const msg = `Error Occured: Counldn't connect to the server.`;
         this.router.navigate(['/error', msg]);
         return throwError(() => new Error(error.message));
       })
