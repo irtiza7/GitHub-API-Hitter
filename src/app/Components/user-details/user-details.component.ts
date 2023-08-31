@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { UserDetailsService } from 'src/app/Services/user-details.service';
 import { UserDetails } from '../../Interfaces/UserDetails';
 
@@ -14,8 +14,7 @@ export class UserDetailsComponent {
 
   constructor(
     private readonly activatedRouter: ActivatedRoute,
-    private readonly userDetailsServices: UserDetailsService,
-    private readonly router: Router
+    private readonly userDetailsServices: UserDetailsService
   ) {}
 
   ngOnInit(): void {
